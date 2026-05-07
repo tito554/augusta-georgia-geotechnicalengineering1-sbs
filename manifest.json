@@ -1,0 +1,20 @@
+{
+  "name": "Augusta Georgia",
+  "short_name": "Augusta Geor",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0A2540",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "lang": "en",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "description": "Professional geotechnical services in Augusta Georgia, USA. Soil studies, testing and technical consulting.",
+  "id": "/augusta-georgia-9690"
+}
