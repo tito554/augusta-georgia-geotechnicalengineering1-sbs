@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -166,7 +202,7 @@ header.hero, .hero { position: relative !important; }
 
 
 
-<section class="block"><div class="container"><h2>Scope of work</h2><div>At 128 meters above sea level, Augusta experiences occasional seismic shaking from intraplate events—the 1886 Charleston earthquake, for instance, caused noticeable damage here despite being 200 km away. That distant source produces low-frequency waves that resonate in thick sediment basins. Our seismic amplification analysis uses NEHRP site classification (ASCE 7 Table 20.3-1) to assign a site class—most of Augusta falls into Site Class D or E—and then computes the amplified response spectrum. We couple this with a site-specific response analysis using equivalent-linear or nonlinear methods depending on strain levels. For critical facilities, we also deploy microtremor HVSR surveys to identify the fundamental frequency of the soil column and check for resonance with the building.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Augusta Georgia</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Area-specific notes</h2><p>We deploy a portable seismic station with three-component geophones and a 24-bit digitizer to record ambient vibrations across the project footprint. The equipment weighs under 10 kg and runs on battery power, so we can set up arrays on undeveloped lots along Riverwatch Parkway or behind existing buildings near the Medical District. Each recording lasts 30 to 60 minutes, capturing enough microtremor data to compute the H/V spectral ratio. The risk of misclassifying the site is real—a stiff surface layer can mask deeper soft soils, leading to an unconservative design spectrum. That is why we always cross-check HVSR peaks against known subsurface logs from nearby wells.</p></div></section>
+<section class="block"><div class="container"><h2>Scope of work</h2><div>At 128 meters above sea level, Augusta experiences occasional seismic shaking from intraplate events—the 1886 Charleston earthquake, for instance, caused noticeable damage here despite being 200 km away. That distant source produces low-frequency waves that resonate in thick sediment basins. Our seismic amplification analysis uses NEHRP site classification (ASCE 7 Table 20.3-1) to assign a site class—most of Augusta falls into Site Class D or E—and then computes the amplified response spectrum. We couple this with a site-specific response analysis using equivalent-linear or nonlinear methods depending on strain levels. For critical facilities, we also deploy microtremor HVSR surveys to identify the fundamental frequency of the soil column and check for resonance with the building.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Augusta Georgia</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Area-specific notes</h2><p>We deploy a portable <a href="/seismic/">seismic</a> station with three-component geophones and a 24-bit digitizer to record ambient vibrations across the project footprint. The equipment weighs under 10 kg and runs on battery power, so we can set up arrays on undeveloped lots along Riverwatch Parkway or behind existing buildings near the Medical District. Each recording lasts 30 to 60 minutes, capturing enough microtremor data to compute the H/V spectral ratio. The risk of misclassifying the site is real—a stiff surface layer can mask deeper soft soils, leading to an unconservative design spectrum. That is why we always cross-check HVSR peaks against known subsurface logs from nearby wells.</p></div></section>
     <section class="block mid-cta-889f-889f" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#EA580C15,#EA580C08);border-left:4px solid #EA580C;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>

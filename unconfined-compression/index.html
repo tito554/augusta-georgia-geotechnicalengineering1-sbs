@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -188,7 +224,7 @@ These numbers feed directly into bearing capacity formulas for strip footings an
 
 <section class="block"><div class="container"><h2>Q&A</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>What is the difference between UCS and unconsolidated undrained triaxial (UU) tests?</summary><p>Both measure undrained shear strength, but UCS applies only axial stress with no confining pressure. UU triaxial adds a confining stress to simulate in-situ conditions. For saturated clays, UU gives a more realistic strength envelope, while UCS is faster and cheaper for routine screening.</p></details><details><summary>How much does an unconfined compression test cost in Augusta Georgia?</summary><p>Typical pricing ranges between US$340 and US$550 per test, depending on sample condition and urgency. Volume discounts apply for projects requiring multiple specimens. Contact our lab for a precise quote based on your scope.</p></details><details><summary>What sample quality is required for a valid UCS test?</summary><p>Samples must be undisturbed, extruded carefully, and tested within 24 hours of extraction. The height-to-diameter ratio should be 2:1. Any air drying, cracking, or disturbance voids the result. We reject samples with visible fissures or moisture loss.</p></details><details><summary>Can UCS be used for stiff clays or only soft clays?</summary><p>UCS works for any cohesive soil with sufficient cohesion to stand unsupported. For very stiff clays or hard shales, the test may produce brittle failures with high Qu values. In those cases, we recommend a <a href="../triaxial/" data-interlink="1">triaxial test</a> to capture the post-peak behavior.</p></details><details><summary>How do I interpret UCS results for foundation design in Augusta?</summary><p>Divide Qu by 2 to obtain undrained shear strength (Su). Use Su in Terzaghi's bearing capacity formula for cohesive soils: q_ult = Su * Nc + overburden. For Augusta clays, we typically apply Nc = 5.14 for strip footings and factor of safety of 3. Your geotechnical engineer should adjust for soil layering and groundwater.</p></details></div></section>
+<details><summary>What is the difference between UCS and unconsolidated undrained triaxial (UU) tests?</summary><p>Both measure undrained shear strength, but UCS applies only axial stress with no confining pressure. UU <a href="/triaxial/">triaxial</a> adds a confining stress to simulate in-situ conditions. For saturated clays, UU gives a more realistic strength envelope, while UCS is faster and cheaper for routine screening.</p></details><details><summary>How much does an unconfined compression test cost in Augusta Georgia?</summary><p>Typical pricing ranges between US$340 and US$550 per test, depending on sample condition and urgency. Volume discounts apply for projects requiring multiple specimens. Contact our lab for a precise quote based on your scope.</p></details><details><summary>What sample quality is required for a valid UCS test?</summary><p>Samples must be undisturbed, extruded carefully, and tested within 24 hours of extraction. The height-to-diameter ratio should be 2:1. Any air drying, cracking, or disturbance voids the result. We reject samples with visible fissures or moisture loss.</p></details><details><summary>Can UCS be used for stiff clays or only soft clays?</summary><p>UCS works for any cohesive soil with sufficient cohesion to stand unsupported. For very stiff clays or hard shales, the test may produce brittle failures with high Qu values. In those cases, we recommend a <a href="../triaxial/" data-interlink="1">triaxial test</a> to capture the post-peak behavior.</p></details><details><summary>How do I interpret UCS results for foundation design in Augusta?</summary><p>Divide Qu by 2 to obtain undrained shear strength (Su). Use Su in Terzaghi's bearing capacity formula for cohesive soils: q_ult = Su * Nc + overburden. For Augusta clays, we typically apply Nc = 5.14 for strip footings and factor of safety of 3. Your geotechnical engineer should adjust for soil layering and groundwater.</p></details></div></section>
 
 
 

@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -166,7 +202,7 @@ header.hero, .hero { position: relative !important; }
 
 
 
-<section class="block"><div class="container"><h2>Scope of work</h2><div>A common mistake we see in Augusta Georgia is skipping a thorough settlement analysis on shallow foundations. Builders often assume that a stiff clay layer near the surface can support a spread footing without deeper investigation. That assumption fails when the clay is overconsolidated but contains lenses of loose sand. We use consolidation testing and elastic settlement calculations based on the actual N-values from standard penetration tests. A proper shallow foundation design in Augusta Georgia must account for the Savannah River floodplain's high water table and the potential for differential settlement on sloped lots. For sensitive structures, we pair the bearing analysis with a <a href="../field-permeability/">permeability field test</a> to estimate long-term drainage behavior under the footing. That extra data prevents costly slab repairs later.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Augusta Georgia</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Area-specific notes</h2><p>In Augusta Georgia, we frequently see shallow foundations placed without verifying the soil's collapse potential. The Piedmont-to-Coastal Plain transition zone creates residual soils that can lose strength when wet. One heavy rain season and a footing on unsaturated clay can settle 2 to 3 inches. That's a structural risk. A full shallow foundation design for Augusta Georgia must include a collapse potential index and a wetting test if the site has expansive or collapsible soils. Ignoring this step leads to cracked slabs, tilted walls, and expensive underpinning work. The cost of a proper analysis is trivial compared to the repair bills we've seen on failed footings in the area.</p></div></section>
+<section class="block"><div class="container"><h2>Scope of work</h2><div>A common mistake we see in Augusta Georgia is skipping a thorough settlement analysis on shallow foundations. Builders often assume that a stiff clay layer near the surface can support a spread footing without deeper investigation. That assumption fails when the clay is overconsolidated but contains lenses of loose sand. We use consolidation testing and elastic settlement calculations based on the actual N-values from standard penetration tests. A proper shallow foundation design in Augusta Georgia must account for the Savannah River floodplain's high water table and the potential for differential settlement on sloped lots. For sensitive structures, we pair the bearing analysis with a <a href="../field-permeability/">permeability field test</a> to estimate long-term drainage behavior under the footing. That extra data prevents costly slab repairs later.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Augusta Georgia</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Area-specific notes</h2><p>In Augusta Georgia, we frequently see shallow <a href="/foundations/">foundations</a> placed without verifying the soil's collapse potential. The Piedmont-to-Coastal Plain transition zone creates residual soils that can lose strength when wet. One heavy rain season and a footing on unsaturated clay can settle 2 to 3 inches. That's a structural risk. A full shallow foundation design for Augusta Georgia must include a collapse potential index and a wetting test if the site has expansive or collapsible soils. Ignoring this step leads to cracked slabs, tilted walls, and expensive underpinning work. The cost of a proper analysis is trivial compared to the repair bills we've seen on failed footings in the area.</p></div></section>
     <section class="block mid-cta-889f-889f" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#EA580C15,#EA580C08);border-left:4px solid #EA580C;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
